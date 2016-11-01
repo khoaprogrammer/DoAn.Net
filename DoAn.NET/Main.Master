@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="DoAn.NET.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Content/Main.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--NAVIGATION BAR--%>
+
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" rel="home" href="/" title="Aahan Krish's Blog - Homepage">ABC</a>
+	</div>
+	
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="/topic/notes/">Trang chủ</a></li>
+			<li><a href="/topic/dev/">Album</a></li>
+		</ul>	
+		<div class="col-sm-3 col-md-3 pull-right">
+		    <form class="navbar-form" role="search">
+		    <div class="input-group">
+			    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+			    <div class="input-group-btn">
+				    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+			    </div>
+		    </div>
+		    </form>
+		</div>
+	</div>
+
+    <form id="form1" runat="server">
+     
+        <asp:Panel ID="pnelContent" runat="server" CssClass="content-main">
+            <asp:Panel ID="pnelContentTop" runat="server" CssClass="content-top">
+                <asp:Label ID="lbeQuote" runat="server" Text="Every strike brings me closer to the next home run. –Babe Ruth" SkinID="quote"></asp:Label>
+            </asp:Panel>
+
+            <asp:Panel ID="pnelContentMid" runat="server" CssClass="content-mid">
+                <asp:ContentPlaceHolder ID="phContent" runat="server"></asp:ContentPlaceHolder>
+            </asp:Panel>
+        </asp:Panel>
+     
+    </form>
+</body>
+</html>

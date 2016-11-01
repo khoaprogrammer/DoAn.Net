@@ -1,0 +1,13 @@
+﻿.content-mid-left {
+    display: inline-block;
+    float: left;
+    width: 80%;
+    height: 300px;
+}
+
+.content-mid-right {
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    border-left: 1px solid rgba(120, 120, 120, 0.35);
+}

@@ -1,0 +1,15 @@
+﻿.body {
+    background-color: aquamarine;
+}
+
+.content-main {
+    margin: 0 10px;
+}
+
+.content-top {
+    text-align: center;
+}
+
+.content-mid {
+    border-top: 1px solid rgba(120, 120, 120, 0.35);
+}
